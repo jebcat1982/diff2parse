@@ -1,0 +1,38 @@
+# YAML 1.2 config file for diff2mat
+
+---
+  # delta options
+  sides: [l, r]
+
+  # file paths
+  base_directory : /home/dillon/
+  bedpostX_directory : data.bedpostX
+  masks_directory : masks
+  xfm : str2diff.mat
+  parcels_name : parcels.nii.gz
+  output_modifier :
+
+  # seed masks
+  mammillothalamic_tract : hypo.nii.gz
+  amygdala : amy.nii.gz
+  globus_pallidus : gp.nii.gz
+  putamen : putamen.nii.gz
+  medial_lemniscus : ml.nii.gz
+  inferior_colliculus : ic.nii.gz
+  superior_colliculus : sc.nii.gz
+  optic_tract : optic.nii.gz
+
+  # termination masks
+  thalamus : thal.nii.gz
+  cortex : cortex.nii.gz
+
+  # probtrackx2 options
+  c : 0.0
+  P : 5000
+  fibthresh : 0.1
+  euler : 1
+  verbose : 1
+  steps : 2000
+  steplength : 0.6
+  distthresh : 0
+...
